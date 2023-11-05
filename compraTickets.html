@@ -45,7 +45,7 @@
   <div class="container-fluid card-container">
     <div class="row justify-content-center mt-5 text-center">
       <!--descuento 1-->
-      <div class="card border-success mb-3 ms-1 me-1 col-2" id="estudiante" data-categoria="Estudiante" onclick="seleccionarCategoria('Estudiante', this)">
+      <div class="card border-primary mb-3 ms-1 me-1 col-2" id="estudiante" data-categoria="Estudiante" onclick="seleccionarCategoria('Estudiante', this)">
         <div class="bg-transparent fs-4 mt-3 mb-3">Estudiante</div>
         <div class="text-success">
           <h5 class="card-title mt-3 mb-3">Tienen un descuento</h5>
@@ -54,7 +54,7 @@
         <div class="bg-transparent mt-3 mb-3">* presentar documentación</div>
       </div>
       <!--descuento 2-->
-      <div class="card border-success mb-3 ms-1 me-1 col-2"id="trainee" data-categoria="Trainee" onclick="seleccionarCategoria('Trainee', this)" >
+      <div class="card border-info mb-3 ms-1 me-1 col-2"id="trainee" data-categoria="Trainee" onclick="seleccionarCategoria('Trainee', this)" >
         <div class="bg-transparent fs-4 mt-3 mb-3">Trainee</div>
         <div class="text-success">
           <h5 class="card-title mt-3 mb-3">Tienen un descuento</h5>
@@ -63,7 +63,7 @@
         <div class="bg-transparent mt-3 mb-3">* presentar documentación</div>
       </div>
       <!--descuento 3-->
-      <div class="card border-success mb-3 ms-1 me-1 col-2" id="junior" data-categoria="Junior" onclick="seleccionarCategoria('Junior', this)">
+      <div class="card border-warning mb-3 ms-1 me-1 col-2" id="junior" data-categoria="Junior" onclick="seleccionarCategoria('Junior', this)">
         <div class="bg-transparent fs-4 mt-3 mb-3">Junior</div>
         <div class="text-success">
           <h5 class="card-title mt-3 mb-3">Tienen un descuento</h5>
@@ -76,8 +76,8 @@
 
 <!--Formulario-->
 
-<form class="container-fluid align-items-center mt-4" id="form.compra">
-<div class="div_form mt-3 mb-4">
+<form class="container-fluid" id="form.compra">
+  <div class="div_form mt-3">
     <h6 class="text-center mb-0">VENTA</h6>
     <h1 class="text-center">VALOR DE TICKET $200</h1>
 </div>
@@ -119,12 +119,12 @@
 </div></div>
 
 <!--Botones formulario-->
-<div class="row justify-content-center mt-2 mb-5">
-  <button onclick="resetearFormulario()" class="boton_form btn col-lg-2 col-4">Borrar</button>
-  <button onclick="calcular()" class="boton_form btn col-lg-2 col-4">Resumen</button>
+<div class="row justify-content-center mb-5 mt-2" >
+  <button type="button" onclick="resetearFormulario()" class="boton_form btn col-lg-3 col-5 mb-3 me-2">Borrar</button>
+  <button type="button" onclick="calcular()" class="boton_form btn col-lg-3 col-5 mb-3 ms-2">Resumen</button>
   
-</div>
-</form>
+</div></form>
+
 
 
  <!-- Footer -->

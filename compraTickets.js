@@ -63,7 +63,7 @@ function seleccionarCategoria(categoria) {
     /*-------------------Boton borrar seleccion y form-----------*/
 
     function resetearFormulario() {
-    document.getElementById('formulario').reset();
+    document.getElementById('form.compra').reset();
   
     // Deseleccionar todas las tarjetas
     const tarjetas = document.querySelectorAll('.card');
