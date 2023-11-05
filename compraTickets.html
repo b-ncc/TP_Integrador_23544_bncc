@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-3">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP INTEGRADOR Javascrip</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+
+<body>
+  <!--Navbar-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid d-flex justify-content-around">
+
+      <!--logo inicio-->
+      <a class="navbar-brand" href="index.html">
+        <img src="imagenes_integrador_front/codoacodo.png" alt="logo" width="90"> Conf Bs As
+      </a>
+      <!--boton menu-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- elementos de navbar-->
+      <div class="d-flex flex-row-reverse">
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html#conferencia">La conferencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#oradores">Los oradores</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#lugar">El lugar y la fecha</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#formulario">Convertite en orador</a></li>
+            <li class="nav-item"><a class="nav-link text-success" href="compraTickets.html">Comprar tickets</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--Categorias Tickets-->
+  <div class="container-fluid card-container">
+    <div class="row justify-content-center mt-5 text-center">
+      <!--descuento 1-->
+      <div class="card border-success mb-3 ms-1 me-1 col-2" id="estudiante" data-categoria="Estudiante" onclick="seleccionarCategoria('Estudiante', this)">
+        <div class="bg-transparent fs-4 mt-3 mb-3">Estudiante</div>
+        <div class="text-success">
+          <h5 class="card-title mt-3 mb-3">Tienen un descuento</h5>
+          <p class="card-text fs-5 mt-3 mb-3">80%</p>
+        </div>
+        <div class="bg-transparent mt-3 mb-3">* presentar documentación</div>
+      </div>
+      <!--descuento 2-->
+      <div class="card border-success mb-3 ms-1 me-1 col-2"id="trainee" data-categoria="Trainee" onclick="seleccionarCategoria('Trainee', this)" >
+        <div class="bg-transparent fs-4 mt-3 mb-3">Trainee</div>
+        <div class="text-success">
+          <h5 class="card-title mt-3 mb-3">Tienen un descuento</h5>
+          <p class="card-text fs-5 mt-3 mb-3">50%</p>
+        </div>
+        <div class="bg-transparent mt-3 mb-3">* presentar documentación</div>
+      </div>
+      <!--descuento 3-->
+      <div class="card border-success mb-3 ms-1 me-1 col-2" id="junior" data-categoria="Junior" onclick="seleccionarCategoria('Junior', this)">
+        <div class="bg-transparent fs-4 mt-3 mb-3">Junior</div>
+        <div class="text-success">
+          <h5 class="card-title mt-3 mb-3">Tienen un descuento</h5>
+          <p class="card-text fs-5 mt-3 mb-3">15%</p>
+        </div>
+        <div class="bg-transparent mt-3 mb-3">* presentar documentación</div>
+      </div>
+    </div>
+  </div>
+
+<!--Formulario-->
+
+<form class="container-fluid align-items-center mt-4" id="form.compra">
+<div class="div_form mt-3 mb-4">
+    <h6 class="text-center mb-0">VENTA</h6>
+    <h1 class="text-center">VALOR DE TICKET $200</h1>
+</div>
+
+<!--inputs-->
+<div class="row justify-content-center">
+  <div class="mt-3 mb-3 col-lg-3 col-5">
+    <input type="name" class="form-control" id="" placeholder="Nombre" required>
+  </div>
+  <div class="mt-3 mb-3 col-lg-3 col-5">
+    <input type="lastName" class="form-control" id="" placeholder="Apellido" required>
+  </div>
+</div>
+<div class="row justify-content-center">
+  <div class="mt-1 mb-3 col-lg-6 col-10">
+    <input type="email" class="form-control" id="" placeholder="Correo" required>
+  </div>
+</div>
+<div class="row justify-content-center">
+  <div class="mb-3 col-lg-3 col-5">
+    <label for="cantidad" class="form-label">Cantidad</label>
+    <input type="number" class="form-control" id="cantidad" min="1" required >
+  </div>
+  <div class="mb-3 col-lg-3 col-5">
+    <label for="seleccion" class="form-label">Categoria</label>
+    <select id="inputSeleccion" class="form-select" required onchange="seleccionarCategoria(this.value)">
+      <option value="" selected></option>
+      <option value="Estudiante">Estudiante</option>
+      <option value="Trainee">Trainee</option>
+      <option value="Junior">Junior</option>
+    </select>
+    </select>
+  </div>
+</div>
+<div class="row  justify-content-center">
+<div class="form-floating mb-3 justify-content-center col-lg-6 col-10">
+  <input  class="form-control" id="floatingInputDisabled" placeholder="" disabled>
+  <label class="ms-3" id="res" for="floatingInputDisabled">Total a Pagar: $</label>
+</div></div>
+
+<!--Botones formulario-->
+<div class="row justify-content-center mt-2 mb-5">
+  <button onclick="resetearFormulario()" class="boton_form btn col-lg-2 col-4">Borrar</button>
+  <button onclick="calcular()" class="boton_form btn col-lg-2 col-4">Resumen</button>
+  
+</div>
+</form>
+
+
+ <!-- Footer -->
+
+ <footer>
+    <div class="container-fluid">
+        <ul class="footer-links">
+            <li><a href="faq.html">Preguntas frecuentes</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+            <li><a href="prensa.html">Prensa</a></li>
+            <li><a href="conferencias.html">Conferencias</a></li>
+            <li><a href="terms.html">Términos y condiciones</a></li>
+            <li><a href="privacidad.html">Privacidad</a></li>
+            <li><a href="estudiantes.html">Estudiantes</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+  <!--fin-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+     <!--javascript-->
+    <script src="compraTickets.js"></script>
+</body>
+</html>
