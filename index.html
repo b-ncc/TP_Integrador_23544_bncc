@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-3">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP INTEGRADOR Javascrip</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+
+<body>
+  <!--Navbar-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid d-flex justify-content-around">
+
+      <!--logo inicio-->
+      <a class="navbar-brand" href="#">
+        <img src="imagenes_integrador_front/codoacodo.png" alt="logo" width="90"> Conf Bs As
+      </a>
+      <!--boton menu-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- elementos de navbar-->
+      <div class="d-flex flex-row-reverse">
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#conferencia">La conferencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#oradores">Los oradores</a></li>
+            <li class="nav-item"><a class="nav-link" href="#lugar">El lugar y la fecha</a></li>
+            <li class="nav-item"><a class="nav-link" href="#formulario">Convertite en orador</a></li>
+            <li class="nav-item"><a class="nav-link text-success" href="compraTickets.html">Comprar tickets</a></li>
+            <li class="nav-item" >
+              <a class ="nav-link  btn btn-outline-light" id="botonLogin" href="login.html">Login</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--La conferencia-->
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade data-bs-ride=" carousel">
+    <div class="carousel-inner">
+
+      <!--carousel item 1-->
+      <div class="carousel-item active">
+        <img src="imagenes_integrador_front\ba1.jpg" class="d-block w-100" alt="..." id="imagen-carousel">
+        <!--caption 1-->
+        <div class="carousel-caption">
+          <h1 class="d-none d-md-block">Conf Bs As</h1>
+          <p class="d-none d-md-block">Bs As llega por primera vez a la Argentina. Un evento para compartir con nuestra
+            comunidad
+            el conocimiento y experiencia de los expertos que estan creando el futuro de internet.
+            Ven a conocer a miembros del evento, a otros estudiates de Codo a Codo
+            y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+            <a href="#formulario" class="btn btn-lg btn-outline-light d-none">Quiero ser orador</a>
+          <a href="compraTickets.html" class="btn btn-lg btn-success d-none">Comprar tickets</a>
+          <!--caption mobile 1-->
+          <h2 class="d-block d-md-none">Conf Bs As</h2>
+          <p class="d-block d-md-none" id="caption-mobile">Llega por primera vez a la Argentina.<br>Te esperamos!
+          </p>
+          <a href="#formulario" class="btn btn-md btn-outline-light mb-2">Quiero ser orador</a>
+          <a href="compraTickets.html" class="btn btn-md btn-success mb-2">Comprar tickets</a>
+        </div>
+      </div>
+      <!--carousel item 2-->
+      <div class="carousel-item">
+        <img src="imagenes_integrador_front\ba2.jpg" class="d-block w-100" alt="...">
+        <!--caption 2-->
+        <div class="carousel-caption">
+          <h1 class="d-none d-md-block">Conf Bs As</h1>
+          <p class="d-none d-md-block">Bs As llega por primera vez a la Argentina. Un evento para compartir con nuestra
+            comunidad
+            el conocimiento y experiencia de los expertos que estan creando el futuro de internet.
+            Ven a conocer a miembros del evento, a otros estudiates de Codo a Codo
+            y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+          <a href="#formulario" class="btn btn-lg btn-outline-light d-none">Quiero ser orador</a>
+          <a href="compraTickets.html" class="btn btn-lg btn-success d-none">Comprar tickets</a>
+
+          <!--caption mobile 2-->
+          <h2 class="d-block d-md-none">Conf Bs As</h2>
+          <p class="d-block d-md-none" id="caption-mobile">Llega por primera vez a la Argentina.<br>Te esperamos!
+          </p>
+          <a href="#formulario" class="btn btn-md btn-outline-light mb-2 ">Quiero ser orador</a>
+          <a href="compraTickets.html" class="btn btn-md btn-success mb-2">Comprar tickets</a>
+        </div>
+      </div>
+      <!--carousel item 3-->
+      <div class="carousel-item">
+        <img src="imagenes_integrador_front\ba3.jpg" class="d-block w-100" alt="...">
+        <!--caption 3-->
+        <div class="carousel-caption text-right">
+          <h1 class="d-none d-md-block">Conf Bs As</h1>
+          <p class="d-none d-md-block">Bs As llega por primera vez a la Argentina. Un evento para compartir con nuestra
+            comunidad
+            el conocimiento y experiencia de los expertos que estan creando el futuro de internet.
+            Ven a conocer a miembros del evento, a otros estudiates de Codo a Codo
+            y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+          <a href="#formulario" class="btn btn-lg btn-outline-light d-none">Quiero ser orador</a>
+          <a href="compraTickets.html" class="btn btn-lg btn-success d-none">Comprar tickets</a>
+          <!--caption mobile 3-->
+          <h2 class="d-block d-md-none text-right">Conf Bs As</h2>
+          <p class="d-block d-md-none" id="caption-mobile">Llega por primera vez a la Argentina.<br>Te esperamos!
+          </p>
+          <a href="#formulario" class="btn btn-md btn-outline-light mb-2 ">Quiero ser orador</a>
+          <a href="compraTickets.html" class="btn btn-md btn-success mb-2">Comprar tickets</a>
+        </div>
+      </div>
+    </div>
+
+    <!--botones del slide-->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- titulo oradores -->
+  <div class="container-fluid align-items-center mt-4" id="oradores">
+    <h6 class="text-center mb-0">CONOCE A LOS</h6>
+    <h1 class="text-center">ORADORES</h1>
+  </div>
+
+  <!-- Los oradores -->
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+
+      <!-- orador 1 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagenes_integrador_front\steve.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="btn btn-sm btn-warning" id=card-btn>Javascrip</a>
+            <a href="#" class="btn btn-sm btn-react text-light" id="card-btn">React</a>
+            <h5 class="card-title">Steve Jobs</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas voluptatibus fuga
+              nihil iure magni id maiores perspiciatis nobis tenetur consequuntur quidem aspernatur saepe nemo
+              laboriosam exercitationem in, pariatur incidunt.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- orador 2 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagenes_integrador_front\bill.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="btn btn-sm btn-warning" id=card-btn>Javascrip</a>
+            <a href="#" class="btn btn-sm btn-react text-light" id=card-btn>React</a>
+            <h5 class="card-title">Bill Gates</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis officiis maiores
+              amet, deleniti minus optio dicta repudiandae iusto. Provident consequuntur magni quisquam id molestiae
+              inventore odio alias ab laudantium eius.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- orador 3 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagenes_integrador_front\ada.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="btn btn-sm btn-secondary" id=card-btn>Negocios</a>
+            <a href="#" class="btn btn-sm btn-danger" id=card-btn>Starups</a>
+            <h5 class="card-title">Ada Lovelace</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odio laudantium
+              non at, pariatur deleniti. Saepe laborum autem eligendi labore sapiente, ratione inventore sed ipsum quo
+              cum recusandae? Laborum, reprehenderit!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- El lugar y la fecha -->
+
+  <div class="container-fluid" id="lugar">
+    <div class="row">
+      <!-- columna 1 -->
+      <div class="col-md-6 p-0">
+        <img src="imagenes_integrador_front\honolulu.jpg" id="img-info">
+      </div>
+      <!-- columna 2 -->
+      <div class="col-md-6 p-2 info">
+        <img src="">
+        <h3 class="title">Bs As - Octubre</h3>
+        <p>Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos.
+          Honolulu es la mas sureña de las principales ciudades estadounidenses. Aunque el nombre de Honolulu se
+          refiere al area urbana
+          en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado
+          consolidada que cubre toda
+          la ciudad (aproximadamente 600km de superficie).
+        </p>
+        <a href="#" class="btn btn-md btn-outline-secondary text-subtle mt-3 mb-4">Conocé más</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- titulo formulario -->
+  <div class="container d-flex justify-content-center align-items-center formulario mt-5 mb-2">
+    <div class="container" id="formulario">
+        <p class="text-center" id="form-p1">CONVIÉRTETE EN UN</p>
+        <h1 class="text-center">ORADOR</h1>
+        <p class="text-center" id="form-p2">Anótate como orador para dar una <span style="text-decoration: underline dotted;">charla ignite.</span> Cuéntanos de qué quieres hablar!</p>
+    </div>
+</div>
+      
+          <!-- Convertite en orador FORMULARIO NUEVO!!!!!!!-->
+
+
+<!-- Convertite en orador form-->
+<fieldset>
+  <div class="container col-sm-6">
+      <div class="row">
+          <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" name="nombre" id="nombre">
+          </div>
+          <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" name="apellido" id="apellido">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col mt-2">
+              <input type="text" class="form-control" placeholder="Email" aria-label="Email" name="email" id="email">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col mt-2" id="tema">
+              <input type="text" class="form-control" placeholder="Tema" aria-label="Tema" name="tema">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col mt-2">
+              <label for="Comentarios" class="form-label"></label>
+              <input class="form-control" id="Comentarios" placeholder="Sobre qué quieres hablar?" name="comentarios" rows="3"></input>
+              <div class="feedback text-secondary">
+                  Recuerda incluir un título para tu charla
+              </div>
+          </div>
+      </div>
+
+      <!-- Boton de envío del formulario -->
+      <div class="text-center mt-3 mb-5">
+          <button type="button" class="btn btnCrear text-light" id="btnCrear">Enviar</button>
+      </div>
+  </div>
+</fieldset>
+
+
+
+      <!-- Footer -->
+
+      <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="faq.html">Preguntas frecuentes</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+                <li><a href="prensa.html">Prensa</a></li>
+                <li><a href="conferencias.html">Conferencias</a></li>
+                <li><a href="terms.html">Términos y condiciones</a></li>
+                <li><a href="privacidad.html">Privacidad</a></li>
+                <li><a href="estudiantes.html">Estudiantes</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!--nuevo-->
+<script>
+  crearOperador = () => {
+      const orador = {
+          nombre: document.getElementById("nombre").value,
+          apellido: document.getElementById("apellido").value,
+          email: document.getElementById("email").value,
+          tema: document.getElementById("tema").value
+      };
+          //debo enviar estos datos al servidor: https://
+          fetch(`http://localhost:8080/web-app-23544/api/orador`,{
+              method: "POST",
+              body: JSON.stringify(orador),
+          })
+          .then(response => response.json())
+          .then(json =>{
+              alert(`alta de orador id${json.id}] ok `);
+          })
+          .catch(err => console.log(err));
+  }
+
+  document.getElementById("btnCrear").addEventListener('click',crearOperador);
+
+</script>
+
+<!--listado-->
+<script>
+      
+  function listarOradores() {/*f2*/
+      //1 preparar
+      const respuesta = fetch(`http://localhost:8080/web-app-23544/api/orador`,{
+          method: 'GET',
+          headers: {
+              'Authorization': localStorage.getItem('jwt')
+          }
+      });
+
+      //2 invocar
+      respuesta
+          .then(response => response.json())
+          .then(data => procesarListado(data))//fulfilled
+          .catch(error => dibujarError(error))//rejected
+  }       
+
+  function procesarListado(data) {
+
+      //guardo en localStorage
+      saveOradoresInFromLocal('oradores', data);
+
+      const listarOradores = data;
+      let rows = '';
+      for(let orador of listarOradores) {
+          //console.log(orador);
+          rows += `
+          <tr>
+              <th scope="row">${orador.id}</th>
+              <td>${orador.nombre}</td>
+              <td>${orador.apellido}</td>
+              <td>${orador.mail}</td>
+              <td>${orador.tema}</td>
+              <td>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="editar(${orador.id})">
+                      Editar
+                  </button>
+                  <button onclick="eliminarOrador(${orador.id}) type="button" class="btn btn-danger">
+                      Eliminar
+                  </button>
+              </td>
+          </tr>
+          `
+      }
+      document.getElementById('usersRows').innerHTML = rows;
+  }
+
+  function dibujarError(error) {
+      // console.log(error);
+      const alerta = `<div class="alert alert-danger" role="alert">
+          ${error.toString()}
+      </div>`;
+      document.getElementById('msj').innerHTML = alerta;
+  }
+
+  document.getElementById('btnGetUsers').addEventListener('click',listarOradores);
+</script>
+
+<!--eliminar-->
+<script>
+  eliminarOrador = (id) => {
+          if(!confirm('SEGURO?')) {
+              return;
+          }
+
+          fetch(`http://localhost:8080/web-app-23544/api/orador?id=${id}`, {
+              method: "DELETE",
+          })
+          .then(response => response) 
+          .then(json => {
+              alert(`se ha eliminado el orador id: ${id}`);
+              listarOradores();
+          })
+          .catch(err => console.log(err));
+      }
+</script>
+
+<!--actualizar-->
+<script>
+  const getOradoresFromLocal = () => {
+      const oradores = localStorage.getItem('oradores')
+      if(oradores) {
+          return JSON.parse(oradores);
+      }
+      return [];
+  }
+  const getOradorSeleccionado = () => {
+      const obj = localStorage.getItem('oradorBuscado')
+      if(obj) {
+          return JSON.parse(obj);
+      }
+      return null;
+
+  }
+
+  const removeOradorSeleccionado = () => {
+      localStorage.removeItem('oradorBuscado');
+  }
+
+ const saveOradoresInFromLocal = (key, data) => {
+   localStorage.setItem(key,JSON.stringify(data)); //como texto
+  }
+
+  const editar = (id) => {
+      const oradores = getOradoresFromLocal();
+      const oradorBuscado = oradores.find(o => o.id === id);
+
+
+      //si quiero actualizar algo en un html
+      document.getElementById('nombreActualizar').value = oradorBuscado.nombre;
+      document.getElementById('apellidoActualizar').value = oradorBuscado.apellido;
+      document.getElementById('emailActualizar').value = oradorBuscado.email;
+      document.getElementById('temaActualizar').value = oradorBuscado.tema;
+
+      //guardo el id/orador del orador que se quiere actualizar
+      saveOradoresInFromLocal('oradorBuscado', oradorBuscado);
+  }
+
+  const actualizarOrador = () => {
+      const oradorSeleccionado = getOradorSeleccionado();
+      if (oradorSeleccionado){
+          return
+      }
+          //obtengo los datos del form que esta en modal
+        const nombre =  document.getElementById('nombreActualizar').value ;
+        const apellido =  document.getElementById('apellidoActualizar').value;
+        const email =  document.getElementById('emailActualizar').value ;
+        const tema =  document.getElementById('temaActualizar').value;
+
+        const orador = {
+          nombre,
+          apellido,
+          email,
+          tema,
+        };
+        
+        //ahora se puede enviar a backend para actualizar
+        fetch(`http://localhost:8080/web-app-23544/api/orador?id=${oradorSeleccionado.id}`,{
+              method: "PUT",
+              body: JSON.stringify(orador),
+          })
+          .then(response => response) //status code 200
+          .then(json =>{
+              alert(`Se ha modificado el id del orador:${oradorSeleccionado.id} `);
+              //cargar la lista
+              listarOradores();
+              removeOradorSeleccionado();
+              cerrarModal();
+          })
+          .catch(err => console.log(err));
+  }
+const cerrarModal = () => {
+document.getElementById('btnCerrarModal').click();
+}
+      
+</script>
+    
+    
+      <!--fin-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</body>
+</html>

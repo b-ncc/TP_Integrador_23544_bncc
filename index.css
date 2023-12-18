@@ -1,0 +1,312 @@
+/* navbar */
+
+.navbar {
+  background-color: rgb(53, 58, 64);
+  justify-content: flex-end;
+  
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+}
+
+.navbar-toggler {
+  justify-self: right;
+}
+
+#botonLogin {
+  border-color: white; /* Borde blanco */
+  border-radius:  5px ; 
+  border-width: 1px; 
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+}
+
+
+#botonLogin:hover {
+  background-color: #848789; /* Gris claro al pasar el mouse */
+}
+
+/* la conferencia */
+
+/* img carousel */
+.carousel-item {
+  position: relative;
+  background-position: center;
+  background-size: cover; 
+  max-height: 850px
+}
+
+
+@media (max-width: 1200px) {
+  .carousel-inner img {
+    width: 100%; 
+    object-fit: cover; 
+    height: 100vh;
+  }
+}
+
+.slide img {
+  filter: brightness(50%);
+  position: relative;
+  margin: auto;
+}
+
+/* texto carousel */
+.carousel-caption {
+  width: -800px;
+  height: 500px;
+  
+  text-align: right;
+  justify-content: right;
+  top: 30%;
+  bottom: auto;
+}
+
+@media (min-width: 1200px) {
+  .carousel-caption {
+    margin-left: 30%;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 500px) {
+  #caption-mobile {
+    font-size: 1em;
+  }
+}
+
+/* botones carousel*/
+
+@media (max-width: 768px) {
+  .btn-md {
+      display: block;
+      width: auto;
+  }
+}
+
+
+
+/* oradores */
+
+
+.card {
+  margin-top: 20px;
+  width: 70;
+}
+
+.card-text {
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+
+.card-img-top {
+  box-sizing: content-box;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.btn-react {
+  background-color: rgb(23, 162, 185);
+}
+
+.btn-react:hover {
+  background-color: rgb(45, 149, 168)
+}
+
+#card-btn {
+  height: 25px;
+  margin-bottom: 7px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 15px;
+}
+
+
+/*el lugar y la fecha*/
+
+.info {
+  margin-top: 100px;
+  margin-bottom: 0;
+  min-height: 400px;
+  max-height: 700px;
+  object-fit: fill;
+  background-color: rgb(53, 58, 64);
+}
+
+@media (max-width: 768px) {
+  .info {
+      margin-top: auto;
+  }
+}
+
+
+.info p{
+  color: aliceblue;
+  text-align: left;
+}
+
+.title{
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+
+#img-info {
+  margin-top: 100px;
+  margin-bottom: 0;
+  object-fit: cover; 
+  width: 100%;
+  min-height: 400px;
+  max-height: 700px;
+}
+
+/* formulario */
+
+
+.formulario {
+  max-width: 900px;
+  margin-top: -15%;
+}
+
+@media (min-width: 600px) {
+  .formulario {
+      margin-top: -5% ;
+  }
+}
+
+/* texto formulario*/
+
+#form-p1 {
+  font-size: medium;
+  margin-bottom: -3px;
+}
+
+#form-p2 {
+font-size: 1.3em;
+}
+
+@media (max-width: 768px) {
+  #form-p2 {
+      font-size: medium;
+  }
+}
+
+#Comentarios {
+  font-size: large;
+}
+
+@media (max-width: 768px) {
+  .feedback {
+      font-size: small;
+  }
+}
+
+/* botones formulario*/
+
+.btnCrear {
+  background-color: rgb(150, 201, 62);
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btnCrear:hover {
+  background-color: rgb(122, 172, 36)
+}
+
+
+
+/* footer */
+
+
+footer {
+  background: linear-gradient(to bottom, #1c3949, #1f526e);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center; 
+  margin-top: 30px; 
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .footer-links li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+
+/* cards compra de tickets */
+
+.card:hover {
+  background-color: #f0f0f0; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.selected {
+background-color: #ffffcc; 
+border: 2px solid #ffcc00; 
+}
+
+.card {
+  min-width: 200px;
+}
+
+/* botones formulario de compra */
+
+.boton-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 20px; 
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+
+.boton_form{
+  font-size: 1.4em;
+  background-color: rgb(150, 201, 62);
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  
+}
+@media (max-width: 768px) {
+  .boton_form {
+      font-size: 1em; 
+  }
+}
+
+.boton_form:hover{
+  background-color: rgb(122, 172, 36);
+  color: white;
+}
+
+#form-compra {
+  max-width: 900px;
+}
+
+/* forms */
+#tema {
+width: 852px;
+  
+}
+
