@@ -19,21 +19,17 @@
 }
 
 #botonLogin {
-  border-color: white; /* Borde blanco */
-  border-radius:  5px ; 
-  border-width: 1px; 
   font-family: 'Orbitron', sans-serif;
-  color: #fff;
 }
 
 
 #botonLogin:hover {
-  background-color: #848789; /* Gris claro al pasar el mouse */
+  background-color: #848789; 
 }
 
 
 #botonTickets {
-  border-color: white; /* Borde blanco */
+  border-color: white;
   border-radius:  5px ; 
   border-width: 1px; 
   color: #fff;
